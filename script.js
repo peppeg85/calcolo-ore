@@ -15,5 +15,5 @@ button.onclick = function () {
   const totalTime = morningTime + eveningTime
   const totalHours = parseInt(totalTime / (1000 * 60 * 60))
   const totalMinutes = (totalTime / (1000 * 60)) % 60
-  result.innerHTML = totalHours + ' ore ' + totalMinutes + ' minuti'
+  result.innerHTML = totalHours + ' ore ' + parseIt(totalMinutes) + ' minuti'
 }
